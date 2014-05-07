@@ -1,0 +1,22 @@
+<div class="loadingRoute"></div>
+				<div class="grid-wrap">
+					<div class="grid">
+						 {{#each leaders}}
+							<figure class="tint"><img {{bind-attr src=pic}} alt="img01"/><figcaption>{{role}}<br>{{name}}</figcaption></figure>
+						 {{/each}}
+						<div id="padding"></div>
+					</div>
+					
+				</div><!-- /grid-wrap -->
+				<div class="content">
+					{{#each leaders}}
+						<div>
+							<div class="dummy-img" {{bind-attr style=bioPic}}+")"></div>
+							<h1 class="dummy-text visible">{{name}}</h1>
+							<p class="dummy-text">{{bio}}</p>
+						</div>
+					{{/each}}
+					
+					<span class="loading"></span>
+					<span class="icon close-content"></span>
+				</div>

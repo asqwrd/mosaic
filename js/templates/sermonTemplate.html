@@ -1,0 +1,21 @@
+<div class="loadingRoute"></div>
+				<div class="grid-wrap">
+					<div class="grid">
+						 {{#each sermons}}
+							<figure class="tint" style="height:225px;"><img {{bind-attr src=pic}} alt="img01" style="height:100%;"/></figure>
+						 {{/each}}
+						<figure id="padding"></figure>
+					</div>
+				</div><!-- /grid-wrap -->
+				<div class="content">
+					{{#each sermons}}
+						<div>
+							<div class="dummy-img"><iframe {{bind-attr src=video}} width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+							<h1 class="dummy-text visible">{{name}}</h1>
+							<p class="dummy-text">{{caption}}</p>
+						</div>
+					{{/each}}
+					
+					<span class="loading"></span>
+					<span class="icon close-content"></span>
+				</div>
