@@ -21,17 +21,28 @@
 	
 			 App.Home = Ember.Model.extend({
 			  caption: attr(),
+			  slideNum: attr(),
+			  fblink: attr(),
+			  morelink: attr(),
 			  coverImage: attr(),
 			  headline: attr(),
 			  video: attr(),
 			  playerThumb:attr(),
+			  link:attr(),
+		
 			  createdAt: attr(Date),
-			 updatedAt: attr(Date)
+			  updatedAt: attr(Date)
+		});
+		App.HomeController = Ember.ArrayController.extend({
+			  sortProperties: ['slideNum'],
+			  sortAscending: true
 		});
 		
 			App.Home.reopenClass({
 			  primaryKey: 'objectId',
-			  adapter: Ember.ParseAdapter.create()
+			  adapter: Ember.ParseAdapter.create(),
+			  sortProperties: ['slideNum'],
+			  sortAscending: false
 			});
 			
 			Ember.Handlebars.registerHelper('ifCond', function(value,options) {
@@ -50,17 +61,28 @@
 					  text += possible.charAt(Math.floor(Math.random() * possible.length));
 					}
 					if(value!="")
-					return new Handlebars.SafeString('<div class="video"><div class="border"></div><iframe id="'+text+'" src="'+value+'?api=1&player_id='+text+'" width="640" height="360" frameborder="0"></iframe></div>'); 
+					return new Handlebars.SafeString('<div class="video"><div class="border"></div><iframe id="'+text+'" src="'+value+'?api=1&player_id='+text+'" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'); 
 
 			});
 			Ember.Handlebars.helper('div', function(value, options) {
 				  var escaped = Handlebars.Utils.escapeExpression(value);
 					if(value!="")
-					return new Handlebars.SafeString('<div class="mask"><div class="thumb '+text+'" style="background:url('+value+');"><span class="play"></span></div></div>'); 
+					return new Handlebars.SafeString('<div id = "'+text+'2" class="mask '+text+'""><div class="thumb '+text+'" style="background:url('+value+');"><span class="play"></span></div></div>'); 
 
 			});
-		
-			
+			Ember.Handlebars.helper('facebook', function(value, options) {
+				  var escaped = Handlebars.Utils.escapeExpression(value);
+					if(value!="")
+					return new Handlebars.SafeString('<a style="color:#d04345" target=_blank href="'+value+'">Facebook Page</a>'); 
+
+			});
+			Ember.Handlebars.helper('more', function(value, options) {
+				  var escaped = Handlebars.Utils.escapeExpression(value);
+					if(value!="")
+						return new Handlebars.SafeString('<a style="color:#d04345" target=_blank href="'+value+'">Click Here</a>'); 
+
+			});
+
 			App.HomeRoute = Ember.Route.extend({
 			  model: function() {
 				return App.Home.find();

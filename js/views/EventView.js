@@ -33,15 +33,16 @@ http://upto.com/intermediary?url=http://upto.com/embed/embedded/source/xbnKKO&t=
 }; */
 
 		var transport = new easyXDM.Socket({
-				swf:"http://upto.com/embed/clientside-vendors/easyxdm/easyxdm.swf",
-				remote:"http://upto.com/intermediary?url=http://upto.com/embed/embedded/source/xbnKKO&t=6SUO&template=3",
-				container:"upto-calendar-container-xbnKKO",
+				swf:"http://upto.com/clientside-vendors/easyxdm/easyxdm.swf",
+				remote:"http://upto.com/intermediary?url=http://upto.com/embedded/plugin/bBKO&eo=http://mosaicmemphis.com/&xdm_e=http%3A%2F%2Fmosaicmemphis.com&xdm_c=default6484&xdm_p=1#/event",
+				container:document.getElementById("upto-calendar-container-bBKO"),
 				onMessage:function(j,k){
-					console.log(j);
+					console.log(this);
 					this.container.getElementsByTagName("iframe")[0].style.height=j+"px";
 				},
 				props:{
-					style:{width:"100%",position:"relative",top:"0",left:"0",overflow:"hidden"}
+					style:{width:"100%",position:"relative",top:"0",left:"0",overflow:"hidden"},
+					height:"100%"
 				},
 				
 			});

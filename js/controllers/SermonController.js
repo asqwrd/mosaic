@@ -27,6 +27,20 @@ define(["ember"], function(Ember){
 				video: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/146656123&amp;auto_play=false&amp;hide_related=false&amp;visual=true",
 				caption:  "T.F. Hodge said, “Hating skin color is contempt for God's divine creative imagination. Honoring it is appreciation for conscious, beautiful-love-inspired diversity.” The Bible says, 'There is neither Jew nor Greek, there is neither slave nor free, there is no male and female, for you are all one in Christ Jesus.' (Galatians 3:28)  Looking at Acts 16, we examine the life, background and conversion of three very different people, and how these three who are worlds apart converge at the cross of Jesus.",
 				
+			  },
+			  {
+				name: 'Acts: The Church that changed the world',
+				pic: "img/acts.jpg",
+				video: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/43614727%3Fsecret_token%3Ds-16xoL&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+				caption:  "T.F. Hodge said, “Hating skin color is contempt for God's divine creative imagination. Honoring it is appreciation for conscious, beautiful-love-inspired diversity.” The Bible says, 'There is neither Jew nor Greek, there is neither slave nor free, there is no male and female, for you are all one in Christ Jesus.' (Galatians 3:28)  Looking at Acts 16, we examine the life, background and conversion of three very different people, and how these three who are worlds apart converge at the cross of Jesus.",
+				
+			  },
+        {
+          name: 'Something is happening in Memphis, Something is happening in our world',
+          pic: "img/something.jpg",
+          video: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/53383455&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+          caption:  "Revelation tells the story of God remaking the world through fire and destruction.  Although there is a lot of pain, death, destruction, war and hell, the focus of it all is the renewal and rebirth that will soon take place.  God is making all things new.  God is up to something in our world.  Something is happening in Memphis, something is happening in our world.  Gods work in people through His church is the beginning of God making all things new."
+				
 			  }
 			];
 

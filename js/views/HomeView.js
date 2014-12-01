@@ -43,8 +43,8 @@ define([
 			
 		},
 		onReady: function() {
-			status.text('ready');
-			console.log('ready');
+			//status.text('ready');
+			//console.log('ready');
 			this.post('addEventListener', 'pause');
 			this.post('addEventListener', 'finish');
 			this.post('addEventListener', 'playProgress');
@@ -52,13 +52,13 @@ define([
 
 		onPause: function() {
 			//status.text('paused');
-			jQuery('.thumb').fadeIn();
+			jQuery('.thumb,.mask').fadeIn();
 			mySwiper.startAutoplay();
 		},
 
 		onFinish: function() {
 			//status.text('finished');
-			$('.thumb').fadeIn();
+			$('.thumb,.mask').fadeIn();
 			mySwiper.startAutoplay();
 		},
 
@@ -77,7 +77,7 @@ define([
 					pagination: '.pagination',
 					loop:false,
 					autoplayDisableOnInteraction: true,
-					autoplay: 3000, 
+					autoplay: 7000, 
 					paginationClickable: true
 				  });
 				  $('.arrow-left').on('click', function(e){
@@ -115,6 +115,7 @@ define([
 				e.preventDefault();
 					mySwiper.stopAutoplay();
 					var className = $(this).attr('class').split(" ")[1];
+					//$('.'+className).fadeOut();
 					$('.'+className).fadeOut();
 					 self.post("play");
 					 
@@ -127,7 +128,7 @@ define([
 						
 				  
 				
-			},3000);
+			},3500);
 			
 			   
 				 

@@ -94,7 +94,7 @@ Ember.ParseAdapter = Ember.Adapter.extend({
         dataType: 'json',
         headers: {
           "X-Parse-Application-Id": 'aGj00lxcBajwuOGg4tZtWw42yNaQWZR6DQtEpw2Y',
-          "X-Parse-REST-API-Key": 'H94oUBK3pwV9ozZbb0mkq90QzAXf4OSsz2Jec43L'
+          "X-Parse-REST-API-Key": 'H94oUBK3pwV9ozZbb0mkq90QzAXf4OSsz2Jec43L',
         },
         data: JSON.stringify(params),
         type: method || 'GET'

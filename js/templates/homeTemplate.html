@@ -6,21 +6,27 @@
     <a class="arrow-right" href="#"></a>
 	  <div class="swiper-container">
 		<div class="swiper-wrapper">
-			{{#each}}
+			{{#each controller}}
 				<div class="swiper-slide" {{bind-attr style=coverImage}}>
 						<!--<img {{bind-attr src=coverImage}}/>-->
 						 <div class="content-slide">
 							
 							{{iframe video}}
 							{{div playerThumb}}
-
 							<p>
 								{{unbound headline}}
+								{{facebook fblink}}
+								{{more morelink}}
+								
 							</p>
 							<p class="caption">
+								
 								{{unbound caption}}
+								
+								{{#link-to link}}Click here for More Details{{/link-to}}
 							</p>
-					
+							
+							
 					 </div>
 				</div>
 				{{/each}}
