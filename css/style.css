@@ -226,6 +226,20 @@ margin: 0px;
 	
 }
 
+.swipeLogo{
+  background:url(../img/vertical/CMYK_logo.png) no-repeat center center;
+  background-size:contain;
+  width:7rem;
+  height:7rem;
+  position:absolute;
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: 999999999999;
+}
+
 .view-full .grid {
 	-webkit-transform: translateZ(-1500px);
 	transform: translateZ(-1500px);
@@ -236,6 +250,7 @@ margin: 0px;
 	width: 200px;
 	height: 370px;
 }
+
 
 .grid figure {
 	margin: 30px;
@@ -250,6 +265,15 @@ margin: 0px;
 	user-select: none;
 	box-shadow: 0px 1px 20px 0px #111;
 
+}
+
+.leaders{
+  padding-bottom:10px;
+}
+
+.sermons{
+  min-height: 245px;
+  max-height: 245px;
 }
 .tint {
     overflow: hidden;
@@ -286,6 +310,7 @@ position: relative;
 text-align: right;
 padding: 10px;
 color: #000;
+font-size:.8rem;
 }
 
 .grid .placeholder {
@@ -849,6 +874,7 @@ sizes, pagination, etc.
 	
 	width: 100%;
 	height: 100%;
+  position:relative;
 	background-size:cover !important;
 	background-position:center !important;
 	background-repeat:no-repeat;

@@ -36,10 +36,17 @@ define(["ember"], function(Ember){
 				
 			  },
         {
-          name: 'Something is happening in Memphis, Something is happening in our world',
+          name: 'Something is happening in Memphis',
           pic: "img/something.jpg",
           video: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/53383455&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
           caption:  "Revelation tells the story of God remaking the world through fire and destruction.  Although there is a lot of pain, death, destruction, war and hell, the focus of it all is the renewal and rebirth that will soon take place.  God is making all things new.  God is up to something in our world.  Something is happening in Memphis, something is happening in our world.  Gods work in people through His church is the beginning of God making all things new."
+				
+			  },
+        {
+          name: 'Stand alone Sermons',
+          pic: "img/7H.jpg",
+          video: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/61951762&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+          caption:  "These are stand alone sermons."
 				
 			  }
 			];

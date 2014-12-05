@@ -7,12 +7,14 @@
 	  <div class="swiper-container">
 		<div class="swiper-wrapper">
 			{{#each controller}}
+        
 				<div class="swiper-slide" {{bind-attr style=coverImage}}>
-						<!--<img {{bind-attr src=coverImage}}/>-->
+          
 						 <div class="content-slide">
 							
 							{{iframe video}}
 							{{div playerThumb}}
+              {{logo logo}}
 							<p>
 								{{unbound headline}}
 								{{facebook fblink}}

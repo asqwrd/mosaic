@@ -23,6 +23,7 @@
 			  caption: attr(),
 			  slideNum: attr(),
 			  fblink: attr(),
+			  logo: attr(),
 			  morelink: attr(),
 			  coverImage: attr(),
 			  headline: attr(),
@@ -68,6 +69,12 @@
 				  var escaped = Handlebars.Utils.escapeExpression(value);
 					if(value!="")
 					return new Handlebars.SafeString('<div id = "'+text+'2" class="mask '+text+'""><div class="thumb '+text+'" style="background:url('+value+');"><span class="play"></span></div></div>'); 
+
+			});
+      Ember.Handlebars.helper('logo', function(value, options) {
+				  //var escaped = Handlebars.Utils.escapeExpression(value);
+					if(value==true)
+            return new Handlebars.SafeString('<figure class = "swipeLogo"></figure>'); 
 
 			});
 			Ember.Handlebars.helper('facebook', function(value, options) {
