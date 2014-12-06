@@ -2,7 +2,7 @@
 				<div class="grid-wrap">
 					<div class="grid">
 						 {{#each leaders}}
-							<figure class="tint leaders"><img {{bind-attr src=pic}} alt="img01"/><figcaption>{{role}}<br>{{name}}<br>{{email}}</figcaption></figure>
+							<figure class="tint leaders"><img class="leaderImg" {{bind-attr src=pic}} alt="img01"/><figcaption>{{role}}<br>{{name}}<br><a style="color: rgb(0, 158, 255);" {{bind-attr href=mailemail}}>{{email}}</a></figcaption></figure>
 						 {{/each}}
 						<div id="padding"></div>
 					</div>

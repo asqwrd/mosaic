@@ -28,7 +28,7 @@
 		// grid element
 		this.grid = this.gridWrap.querySelector( 'div.grid' );
 		// main grid items
-		this.gridItems = [].slice.call( this.grid.children );
+		this.gridItems = [].slice.call( this.grid.children);
 		// default sizes for grid items
 		this.itemSize = { width : this.gridItems[0].offsetWidth, height : this.gridItems[0].offsetHeight };
 		// content
@@ -50,10 +50,12 @@
 		
 		// open the content element when clicking on the main grid items
 		this.gridItems.forEach( function( item, idx ) {
-			item.addEventListener( 'click', function() {
-				self._showContent( idx );
-			} );
-		} );
+      var img = item.children[0];
+      if(img !==undefined)
+        img.addEventListener( 'click', function() {
+          self._showContent( idx );
+        } );
+      } );
 
 		// close the content element
 		this.close.addEventListener( 'click', function() {
