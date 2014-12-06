@@ -43,6 +43,13 @@ define(["ember"], function(Ember){
 				
 			  },
         {
+          name: 'Advent: The Word became Flesh',
+          pic: "img/advent.jpg",
+          video: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/62731816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+          caption:  "Advent is the celebration of the coming of Jesus. In the coming of Jesus, God actually becomes flesh and lives among us. In that, Jesus was able to identify with us and then, ultimately save us."
+				
+			  },
+        {
           name: 'Stand alone Sermons',
           pic: "img/7H.jpg",
           video: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/61951762&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
@@ -50,7 +57,6 @@ define(["ember"], function(Ember){
 				
 			  }
 			];
-
 
 	var LeadershipController = Ember.ArrayController.extend({
 		sermons: long_short_data,

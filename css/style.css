@@ -1182,7 +1182,7 @@ Pagination Styles
 	}
 	.content-slide p {
 		top: initial;
-		bottom:30%;
+		bottom:8rem;
 		font-size: .7em;
 		font-weight:400;
 		line-height:30px;
@@ -1190,7 +1190,7 @@ Pagination Styles
 	}
 	.content-slide p.caption {
 		top: initial;
-		bottom:3.5rem;
+		bottom:6rem;
 	}
 	.content-slide .border {
 		top: 0px;
@@ -1259,9 +1259,9 @@ Pagination Styles
 		line-height:20px;
 		height:20px;
 	}
-	p.caption {
-		bottom: 10%;
-	}	
+	.content-slide p.caption {
+    bottom: 3.5rem;
+  }
 
 	/*#upto-calendar-container-xbnKKO{
 		overflow-y:auto;
