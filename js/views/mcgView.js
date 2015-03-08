@@ -3,7 +3,7 @@ define([
     "text!templates/mcgTemplate.html"
 ], function(Ember, mcgTemplate) {
 
-    var mcgView = Ember.View.extend({
+    var McgView = Ember.View.extend({
         elementId:"mcg",
         classNames:["fluid_container"],
         defaultTemplate: Ember.Handlebars.compile(mcgTemplate),
@@ -22,6 +22,6 @@ define([
 
     });
 
-    return mcgView;
+    return McgView;
 });
 
