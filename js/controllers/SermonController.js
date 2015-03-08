@@ -50,6 +50,13 @@ define(["ember"], function(Ember){
 				
 			  },
         {
+          name: 'Nehemiah: Building a Foundation that leaves a Legacy',
+          pic: "img/nehemiah.jpg",
+          video: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/71894448&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+          caption:  "Nehemiah is about God rebuilding the city of Jerusalem after the destruction of the nation because of their rebellion against God.  It's about the rebuilding of the wall which enables the city to thrive for the future good of God’s people and their continued survival.  It's a rebuilding process that leaves a legacy for the future, a legacy that will pave the way for the coming of Jesus."
+				
+			  },
+        {
           name: 'Stand alone Sermons',
           pic: "img/7H.jpg",
           video: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/61951762&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
