@@ -9,6 +9,7 @@ define([
 	"views/VisionView",
 	"views/AboutView",
 	"views/LeadershipView",
+	"views/mcgView",
 	//"adapters/ApplicationAdapter",
 	//"models/Home",
 	//"components/barChart",
@@ -19,7 +20,7 @@ define([
 	//"controllers/HomeController",
 	//"router/HomeRoute",
 	"router/router"
-], function(ApplicationView, HomeView, EventView, LocationView, DonateView, ConnectView, SermonView, VisionView, AboutView, LeadershipView, ApplicationController,LeadershipController, SermonController, Router){
+], function(ApplicationView, HomeView, EventView, LocationView, DonateView, ConnectView, SermonView, VisionView, AboutView, LeadershipView, mcgView,ApplicationController,LeadershipController, SermonController, Router){
 	/*Module Pattern*/
 	var App = {
 		ApplicationView: ApplicationView,
@@ -32,6 +33,7 @@ define([
 		VisionView: VisionView,
 		AboutView: AboutView,
 		LeadershipView: LeadershipView,
+        mcgView: mcgView,
 		ApplicationController: ApplicationController,
 		LeadershipController: LeadershipController,
 		SermonController: SermonController,

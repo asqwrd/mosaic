@@ -16,6 +16,7 @@
 			  this.resource('donate');
 			  this.resource('sermon');
 			  this.resource('connect');
+			  this.resource('mcg');
 			});
 			var attr = Ember.attr;
 	
