@@ -60,7 +60,7 @@ define(["ember"], function(Ember){
             name: 'Anomaly',
             pic: "img/anomaly.jpg",
             video: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/104551357&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
-            caption: "The definition of anomaly is, &ldquo;something that deviates from what is standard, normal or expected.&rdquo; Christians are anomalies. In this series we will see the kingdom of Christ in contrast to the kingdom of Man. We’ll look at what makes Christians this contrast community by focusing on topics that are pressing and important for all of us. Non-Christians will see how we are different and why. Christians will be confronted with areas of life they must repent of and apply the gospel to as they grow in Christlikeness. The gospel changes us, and in the process we become Anomalies."
+            caption: "The definition of anomaly is, \"something that deviates from what is standard, normal or expected.\" Christians are anomalies. In this series we will see the kingdom of Christ in contrast to the kingdom of Man. We’ll look at what makes Christians this contrast community by focusing on topics that are pressing and important for all of us. Non-Christians will see how we are different and why. Christians will be confronted with areas of life they must repent of and apply the gospel to as they grow in Christlikeness. The gospel changes us, and in the process we become Anomalies."
 
         },
         {
